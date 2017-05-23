@@ -10,7 +10,9 @@
 #include <string.h>
 #include "mersenne.cpp"
 
-#define energy(b) (2*(b)-2.0*(Lx*Ly*Lz))
+// #define CHECK_WRITE
+
+#define energy(b) (2*(b)-3.0*(Lx*Ly*Lz))
 
 int Lx, Ly, Lz;
 
@@ -42,7 +44,9 @@ double Neighbours( double ***s, int i, int j, int k )
 int main()
 {
     int i, j, k, N, a, b=0, b_new,
-    n, skip, min_steps, mcs, rng, top_b, *hist;
+    n, skip, min_steps, mcs, rng, top_b, *hist, it_count;
+
+    double *m, *m2, *m_sum, *m2_sum, m_sum_no_arr, m2_sum_no_arr;
 
     double f, fmin, dec_pow, flat_thres,
     r, ksi1, ksi2, ksi3, p,
@@ -85,6 +89,8 @@ int main()
         0.314678896491571},
     arcsin_Theta=1.0;
 
+    it_count = 0;
+
     FILE *OUT;
 
     OUT = fopen("config.cfg", "r");
@@ -112,6 +118,12 @@ int main()
 
     hist = new int [top_b];
     g = new double [top_b];
+
+    m = new double [top_b];
+    m_sum = new double [top_b];
+
+    m2 = new double [top_b];
+    m2_sum = new double [top_b];
 
     s_x = new double** [Lx];
     s_y = new double** [Lx];
@@ -149,6 +161,10 @@ int main()
 
     CRandomMersenne Mersenne(time(0));
 
+    #ifdef CHECK_WRITE
+        goto m1;
+    #endif
+
     while(f>fmin)
         {
             printf("f=%.9lf\n", f);
@@ -156,8 +172,9 @@ int main()
             double lnf=log(f);
             int c, cont=1;
 
-            for(a=0;a<top_b;a++)
+            for(a = 0;a < top_b; a++)   {
                 hist[a] = 0;
+            }
 
             n=0;
             c=skip+1;
@@ -191,6 +208,7 @@ int main()
                                                     ksi3 = (double) Mersenne.IRandomX(-rng,rng)/rng;
 
                                                     r = sqrt(ksi1*ksi1 + ksi2*ksi2 + ksi3*ksi3);
+
                                                 } while(r>1.0);
 
                                             s_x[i][j][k] = ksi1*arcsin_Theta/r;
@@ -199,11 +217,22 @@ int main()
 
                                             b = b_new;
                                         }
+
                                     g[b]+=lnf;
+
+                                    m[b]+=s_x[i][j][k];
+                                    m[b]+=s_y[i][j][k];
+                                    m[b]+=s_z[i][j][k];
+
+                                    m2[b]+=s_x[i][j][k]*s_x[i][j][k];
+                                    m2[b]+=s_y[i][j][k]*s_y[i][j][k];
+                                    m2[b]+=s_z[i][j][k]*s_z[i][j][k];
+
                                     hist[b] += 1;
                                     n++;
                                 }
                         }
+
                     mcs++;
                     c++;
 
@@ -224,7 +253,16 @@ int main()
                     else
                         cont=1;
 
+                    it_count++;
+
+                    if(mcs >= 300000)   {
+
+                        break;
+
+                    }
+
                 } while(cont);
+
                 /** alternative flatness check **/
                     /*if((mcs >= min_steps) && (c >= skip))
                         {
@@ -260,15 +298,50 @@ int main()
                         cont = 1;
                 }while(cont);*/
 
-        for(a=1;a<top_b;a++)
-            g[a] -= g[0];
-        g[0] = 0.0;
+            std::cout << "top_b = " << top_b << std::endl;
 
-        f = pow(f,dec_pow);
+            double min_gi = g[0];
+
+            for(int i = 0; i < top_b; i++)  {
+
+                if(min_gi > g[i])   {
+
+                    min_gi = g[i];
+
+                }
+
+            }
+
+            for(int i = 1; i < top_b; i++)    {
+    
+                g[i] -= min_gi;
+    
+                m_sum[i] += m[i];
+                // m_sum_no_arr += m[i];
+    
+                // std::cout << m_sum[i] << std::endl;
+    
+                m[i] = 0.0;
+    
+                m2_sum[i] += m2[i];
+    
+                // m2_sum_no_arr += m2[i];
+    
+                std::cout << m2_sum[i] << std::endl;
+    
+                m2[i] = 0.0;
+    
+                g[0] = 0.0;
+    
+            }
+
+            f = pow(f,dec_pow);
         }
 
     OUT = fopen("data.dat", "w+");
         {
+            m1:
+
             for(a=0;a<top_b;a++)
                 {
                     if((a!=1)&&(a!=Lx*Ly*Lz-1))
@@ -279,12 +352,13 @@ int main()
                         }
                 }
 
-                    char * filename_out_td = new char [100];
-                    char * filename_out_ds = new char [100];
+                    char * filename_out_td = new char [100];  // termodinamical
+                    char * filename_out_ds = new char [100];  // density of states
+                    char * filename_out_mg = new char [100];  // magnet
 
-                    double EE, EE2, GE, Ut, Ft, St, Ct, lambdatemp, lambda;
+                    double EE, EE2, GE, Ut, Ft, St, Ct, lambdatemp, lambda, MM, MM2, Mt, Xt;
 
-                    std::ofstream out_f_td, out_f_ds, time_f;
+                    std::ofstream out_f_td, out_f_ds, out_f_mg, time_f;
 
                     std::stringstream ss;
 
@@ -293,8 +367,8 @@ int main()
                 
                     strcpy(filename_out_td ,ss.str().c_str());
                 
-                    out_f_td.open(filename_out_td);
-                    if(!out_f_td) std::cout << "Cannot open " << filename_out_td << ".Check permissions or free space";
+                    out_f_td.open(filename_out_td, std::ios::out);
+                    if(!out_f_td) std::cout << "Cannot open " << filename_out_td << ".Check permissions or free space! \n";
                     out_f_td << "T\tUt\tFt\tSt\tCt\n";
                 
                     ss.str("");
@@ -303,42 +377,91 @@ int main()
                     strcpy(filename_out_ds, ss.str().c_str());
                 
                     out_f_ds.open(filename_out_ds, std::ios::out);
-                    if(!out_f_ds) std::cout << "Cannot open " << filename_out_ds << ".Check permissions or free space";
+                    if(!out_f_ds) std::cout << "Cannot open " << filename_out_ds << ".Check permissions or free space! \n";
                     out_f_ds << "i\tE(i)\tg[i]\thist[i]\n";
+
+                    ss.str("");
+                    ss << "results/MagnetStat_HEIS_3D_L=" << Lx << ".dat";
                 
+                    strcpy(filename_out_mg ,ss.str().c_str());
+                
+                    out_f_mg.open(filename_out_mg, std::ios::out);
+                    if(!out_f_mg) std::cout << "Cannot open " << filename_out_mg << ".Check permissions or free space! \n";
+                    
+                    std::cout << "LX LY LZ N top_b: " << Lx << " : " << Ly << " : " << Lz << " : " << N << " : " << top_b << "\n";
+
+                    for(int i = 0; i < top_b; i++)  {
+
+                        std::cout << "M[i] = " << m[i] << std::endl;
+
+                    }
+
                     for(double T = 0; T <= 8; T += 0.01)  {
                 
                         EE = 0;
                         EE2 = 0;
                         GE = 0;
+
+                        MM = 0;
+                        MM2 = 0;
                 
                         lambda = 0;
                         lambdatemp = 0;
                 
                         for(int i = 0; i < top_b; i++)  {
-                            if((i!=0) && i!=Lx*Ly*Lz-1 && hist[i]!=0)    {
+                            // if((i!=N-1) && (hist[i]!=0))    {
+
                                 lambdatemp = g[i] - energy(i)/T;
                                 if(lambdatemp > lambda) lambda = lambdatemp;
-                            }
+
+                            // }
                         }
                 
                         for(int i = 0; i < top_b; i++) {
-                            if((i!=1) && (i!=Lx*Ly*Lz-1) && (hist[i]!=0))    {
-                                EE += energy(i)*exp(g[i]-(energy(i))/T-lambda);
+                            // if((i!=N-1) && (hist[i]!=0))    {
+                                
+                                EE  += energy(i)*exp(g[i]-(energy(i))/T-lambda);
                                 EE2 += energy(i)*energy(i)*exp(g[i]-(energy(i))/T-lambda);
-                                GE += exp(g[i]-energy(i)/T-lambda);
-                            }
+                                GE  += exp(g[i]-energy(i)/T-lambda);
+
+                                MM  += m_sum[i]*exp(g[i]-(energy(i))/T-lambda);
+
+                                MM2 += m2_sum[i]*exp(g[i]-(energy(i))/T-lambda);
+
+                                // std::cout << "GE = " << GE << std::endl;
+
+                            // }
                         }
+
+                        std::cout << "MM = " << MM << std::endl;
+                        std::cout << "MM2 = " << MM2 << std::endl;
+                        
+                        // MM2 = MM2/GE;
                 
                         Ut = EE/GE;
                         Ft = -T*lambda-(T)*log(GE);
                         St = (Ut-Ft)/T;
                         Ct = ((EE2/GE)-Ut*Ut)/(T*T);
+
+                        Mt = MM/GE;
+                        Xt = (Mt*Mt-(MM2/GE))/T;
                 
                         // if((Ut==Ut)==true&&(Ft==Ft)==true&&(St==St)==true&&(Ct==Ct)==true) // Не пишем NaN 
-                        out_f_td << std::fixed << T << "\t" << Ut/(Lx*Ly*Lz) << "\t" << Ft/(Lx*Ly*Lz) << "\t" << St/(Lx*Ly*Lz) << "\t" << Ct/(Lx*Ly*Lz) << "\n";
+                        out_f_td << std::fixed << T << "\t" << Ut/N << "\t" << Ft/N << "\t" << St/N << "\t" << Ct/N << "\n";
+                        out_f_mg << std::fixed << T << "\t" << Mt/N << "\t" << Xt/N << "\n";
 
                     }
+
+                    for(int i = 0; i < top_b; i++)  {
+
+                        out_f_ds << std::fixed << std::setprecision(6) << i << "\t" << energy(i) << "\t" << g[i] << "\t" << hist[i] << "\n";
+
+                    }   
+
+                    out_f_td.close();
+                    out_f_ds.close();
+                    out_f_mg.close();
+
         }
     fclose(OUT);
 
