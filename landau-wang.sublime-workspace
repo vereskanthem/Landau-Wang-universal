@@ -1,0 +1,1349 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"T",
+				"T_Ct_max"
+			],
+			[
+				"out",
+				"out_t_max"
+			],
+			[
+				"ou",
+				"out_t_max"
+			],
+			[
+				"filename_out_t",
+				"filename_out_t_max"
+			],
+			[
+				"Ct",
+				"Ct_max"
+			],
+			[
+				"X",
+				"Xt"
+			],
+			[
+				"Xt",
+				"Xt"
+			],
+			[
+				"m2",
+				"m2_sum"
+			],
+			[
+				"MM_",
+				"MM_mult_MM"
+			],
+			[
+				"prin",
+				"println"
+			],
+			[
+				"link",
+				"link_to_project"
+			],
+			[
+				"elL",
+				"elOriginalLink"
+			],
+			[
+				"linkl",
+				"linkOriginalLink"
+			],
+			[
+				"li",
+				"linkOriginalLink"
+			],
+			[
+				"metaE",
+				"metaElementWithLink"
+			],
+			[
+				"meta",
+				"metaNameOfVideo"
+			],
+			[
+				"me",
+				"metaLinkToVideo"
+			],
+			[
+				"aEle",
+				"aElementWithLink"
+			],
+			[
+				"print",
+				"printStackTrace"
+			],
+			[
+				"e",
+				"e"
+			],
+			[
+				"butt",
+				"buttonYoutubeUpload"
+			],
+			[
+				"bu",
+				"buttonYoutubeUpload"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"te",
+				"textInReferalField"
+			],
+			[
+				"refe",
+				"referalField"
+			],
+			[
+				"de",
+				"delayField"
+			],
+			[
+				"get",
+				"getText"
+			],
+			[
+				"is",
+				"isEmpty"
+			],
+			[
+				"text",
+				"textInNameField"
+			],
+			[
+				"tex",
+				"textInNameField"
+			],
+			[
+				"pub",
+				"uploadAsPublic"
+			],
+			[
+				"uplo",
+				"uploadAsPublic"
+			],
+			[
+				"public",
+				"publicUpload"
+			],
+			[
+				"publ",
+				"public_upload"
+			],
+			[
+				"check",
+				"checkBoxPanel"
+			],
+			[
+				"cke",
+				"checkBoxPanel"
+			],
+			[
+				"J",
+				"JPanel"
+			],
+			[
+				"ch",
+				"checkBoxPanel"
+			],
+			[
+				"Ac",
+				"ActionListener"
+			],
+			[
+				"pu",
+				"publicUpload"
+			],
+			[
+				"refera",
+				"_referal_name"
+			],
+			[
+				"_",
+				"_referal_name"
+			],
+			[
+				"video",
+				"videohive"
+			],
+			[
+				"p",
+				"profileNameLabel"
+			],
+			[
+				"Sans",
+				"Sans"
+			],
+			[
+				"BOLD",
+				"BOLD"
+			],
+			[
+				"butto",
+				"buttonVimeoUpload"
+			],
+			[
+				"fo",
+				"font"
+			],
+			[
+				"ma",
+				"massive"
+			],
+			[
+				"random",
+				"random_index_y"
+			],
+			[
+				"Bu",
+				"BUFFER_SIZE"
+			],
+			[
+				"arg",
+				"argv"
+			],
+			[
+				"sys",
+				"system_of"
+			],
+			[
+				"omp_",
+				"omp_get_thread_num"
+			],
+			[
+				"in",
+				"interrupt"
+			],
+			[
+				"tok",
+				"tokenType"
+			],
+			[
+				"parse",
+				"parsed_filename"
+			],
+			[
+				"parsed_na",
+				"parsed_name_of_video"
+			],
+			[
+				"pa",
+				"parsed_filename"
+			],
+			[
+				"Aut",
+				"AuthAndUpload"
+			],
+			[
+				"Video",
+				"VideoToVimeo"
+			],
+			[
+				"You",
+				"YOUTUBE_UPLOAD"
+			],
+			[
+				"you",
+				"youtube_upload"
+			],
+			[
+				"vime",
+				"vimeo_upload"
+			],
+			[
+				"Vide",
+				"VideoToVimeo"
+			],
+			[
+				"a",
+				"aItemDescription"
+			],
+			[
+				"pr",
+				"printStackTrace"
+			],
+			[
+				"tr",
+				"trigger"
+			],
+			[
+				"textA",
+				"textArea"
+			],
+			[
+				"del",
+				"delayFieldLabel"
+			],
+			[
+				"set",
+				"setPreferredSize"
+			],
+			[
+				"profile",
+				"profileNameLabel"
+			],
+			[
+				"buttons",
+				"buttonsBox"
+			],
+			[
+				"pro",
+				"profileNameLabel"
+			],
+			[
+				"co",
+				"constraints"
+			],
+			[
+				"la",
+				"labelFieldBox1"
+			],
+			[
+				"main",
+				"mainBox"
+			],
+			[
+				"Tex",
+				"textInDelayField"
+			],
+			[
+				"textIn",
+				"textInNameField"
+			],
+			[
+				"JText",
+				"JTextField"
+			],
+			[
+				"gri",
+				"gridx"
+			],
+			[
+				"button",
+				"buttonStart"
+			],
+			[
+				"Grid",
+				"GridBagConstraints"
+			],
+			[
+				"GridB",
+				"GridBagLayout"
+			],
+			[
+				"pri",
+				"printStream"
+			],
+			[
+				"App",
+				"AppGui"
+			],
+			[
+				"Whi",
+				"WHITE_COLOR"
+			],
+			[
+				"Pa",
+				"ParseAndLoad"
+			],
+			[
+				"im",
+				"imgAttrAuthor"
+			],
+			[
+				"spa",
+				"spanNumOfPages"
+			],
+			[
+				"num",
+				"number_of_pages"
+			],
+			[
+				"RE",
+				"RED_COLOR"
+			],
+			[
+				"hist",
+				"hist_average"
+			],
+			[
+				"cou",
+				"count"
+			],
+			[
+				"cnt",
+				"cnt"
+			],
+			[
+				"omp",
+				"omp_get_thread_num"
+			],
+			[
+				"hi",
+				"hist"
+			],
+			[
+				"g",
+				"g_average"
+			],
+			[
+				"g_",
+				"g_average"
+			],
+			[
+				"min_",
+				"min_in_ge"
+			],
+			[
+				"min",
+				"min_in_ge"
+			],
+			[
+				"his",
+				"hist_average"
+			],
+			[
+				"rando",
+				"random_index_y"
+			],
+			[
+				"nu",
+				"num_of_exchange_replica"
+			],
+			[
+				"om",
+				"omp_get_thread_num"
+			],
+			[
+				"E_M",
+				"E_min"
+			],
+			[
+				"ra",
+				"random_index_x"
+			],
+			[
+				"ran",
+				"random_index_x"
+			],
+			[
+				"Dela",
+				"DELAY_IN_MIN"
+			],
+			[
+				"DE",
+				"DELAY_IN_SECONDS"
+			],
+			[
+				"imgA",
+				"imgAttrAuthor"
+			],
+			[
+				"nam",
+				"name_of_profile"
+			],
+			[
+				"Pri",
+				"printStackTrace"
+			],
+			[
+				"Re",
+				"returnedVideo"
+			],
+			[
+				"count",
+				"Count"
+			],
+			[
+				"aTags",
+				"aTagsAttrNames"
+			],
+			[
+				"aTa",
+				"aTagsElements"
+			],
+			[
+				"aTag",
+				"aTagsAttrNames"
+			],
+			[
+				"Strin",
+				"String"
+			],
+			[
+				"pars",
+				"parsed_ref_link"
+			],
+			[
+				"name",
+				"name_of_video_with_extension"
+			],
+			[
+				"Str",
+				"StringReader"
+			],
+			[
+				"par",
+				"parsed_filename"
+			],
+			[
+				"img",
+				"imgAttrTags"
+			],
+			[
+				"pas",
+				"parsed_filename"
+			],
+			[
+				"In",
+				"InputStreamContent"
+			],
+			[
+				"upload",
+				"uploader"
+			],
+			[
+				"Youtu",
+				"youtube"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "landau-wang.cpp",
+			"settings":
+			{
+				"buffer_size": 15144,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 9222,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include <list>"
+			}
+		},
+		{
+			"file": "/home/nlare/_code/cpp-izing.universal.with.u/main.cpp",
+			"settings":
+			{
+				"buffer_size": 12347,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Makefile",
+			"settings":
+			{
+				"buffer_size": 154,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/nlare/_code/cpp-izing.universal.with.u/izing-3d.h",
+			"settings":
+			{
+				"buffer_size": 3410,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "landau-wang.h",
+			"settings":
+			{
+				"buffer_size": 1932,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/My-C++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/My-C++.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/User/JavaC-jsoup.sublime-build",
+					""
+				],
+				[
+					"Packages/User/commit-nas.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/My-C++.sublime-build",
+					""
+				],
+				[
+					"Packages/User/My-C++.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/My-C++.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "pa",
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"plug",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Javatar: Create new..."
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"gi",
+				"Git: Init"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 457.0
+	},
+	"console":
+	{
+		"height": 114.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/nlare/_code/java-YouTubeUploader/YouTubeUploader.sublime-project",
+		"/home/nlare/_code/java-YouTubeUploader/src/java/com/uploader/VideoToYoutube.java",
+		"/home/nlare/_code/Unity3D/Snake2D/Assets/Scripts/BuildScripts/ScreenField.cs",
+		"/home/nlare/_code/Unity3D/Snake2D/\"/home/nlare/_code/Unity3D/Snake2D/Assets/Scripts/BuildScripts/Snake.cs\"",
+		"/home/nlare/_code/Unity3D/Snake2D/\"/home/nlare/_code/Unity3D/Snake2D/Assets/Scripts/BuildScripts/Food.cs\"",
+		"/home/nlare/_code/Unity3D/Snake2D/\"/home/nlare/_code/Unity3D/Snake2D/Assets/Scripts/Utils/TextureHelper.cs\"",
+		"/home/nlare/_code/Unity3D/Snake2D/\"/home/nlare/_code/Unity3D/Snake2D/Assets/Scripts/GameManager.cs\"",
+		"/home/nlare/.config/awesome/rc.lua",
+		"/home/nlare/_code/test_x86.cpp",
+		"/home/nlare/_code/java-YouTubeUploader/src/java/com/uploader/OneLinkUpload.java",
+		"/home/nlare/_code/java-YouTubeUploader/src/java/com/google/api/services/samples/youtube/cmdline/Auth.java",
+		"/home/nlare/_code/java-YouTubeUploader/backup/google/api/services/samples/youtube/cmdline/Auth.java",
+		"/home/nlare/_code/java-YouTubeUploader/src/java/com/uploader/Auth.java",
+		"/home/nlare/_code/java-YouTubeUploader/src/java/com/uploader/VideoToVimeo.java",
+		"/home/nlare/_code/java-YouTubeUploader/com/uploader/VimeoResponse.java",
+		"/home/nlare/_code/java-YouTubeUploader/com/uploader/VideoToYoutube.java",
+		"/home/nlare/_code/java-YouTubeUploader/com/uploader/HiveToResource.java",
+		"/home/nlare/_code/java-YouTubeUploader/com/uploader/AppGui.java",
+		"/home/nlare/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/nlare/_code/java-YouTubeUploader/com/uploader/PreferensesGUI.java",
+		"/home/nlare/_code/cpp-Landau-Wang-omp-averaged/.project.sublime-project",
+		"/home/nlare/_code/java-YouTubeUploader/com/uploader/VimeoException.java",
+		"/home/nlare/_code/java-YouTubeUploader/com/uploader/Vimeo.java",
+		"/home/nlare/_code/java-YouTubeUploader/com/uploader/VideoFromURL.java",
+		"/home/nlare/_code/Landau-Wang-omp-averaged/landau-wang-omp.cpp",
+		"/home/nlare/_code/Landau-Wang-omp-averaged/Makefile",
+		"/home/nlare/_code/Th.phys.surface/text.tex",
+		"/home/nlare/_code/tex-videohosting/project-description-hw.tex",
+		"/home/nlare/_code/tex-videohosting/article-hardware.tex",
+		"/home/nlare/_code/tex-surface-physics/Lozhnikov_ref.tex",
+		"/home/nlare/_code/tex-videohosting/document.tex",
+		"/home/nlare/_code/NIR/document.tex",
+		"/home/nlare/_code/MFP/zadanie 1/work5.cpp",
+		"/home/nlare/_code/tex-surface-physics/Lozhnikov_report.tex",
+		"/home/nlare/_code/NIR/presentation.tex",
+		"/home/nlare/_code/MFP/zadanie 1/work5.cur.cpp",
+		"/home/nlare/_code/tex-Marenko/25-05-15/25-05-15-----.tex",
+		"/home/nlare/_code/tex-Marenko/22-09-15/22-09-15----.tex",
+		"/home/nlare/_code/latex-Marenko/25-05-15-----.tex",
+		"/home/nlare/_code/latex-Marenko/25-11-14_СТАТЬЯ_Маренко и др_Омск.tex",
+		"/home/nlare/data/sync/Marenko/Статья/25-05-15_СТАТЬЯ_Маренко и др_Омск.tex",
+		"/home/nlare/data/_docs/Marenko/Статья/25-05-15-----.tex",
+		"/home/nlare/data/_docs/Marenko/22-09-15_СТАТЬЯ_Маренко и др.tex",
+		"/home/nlare/_code/YouTubeUploader/com/uploader/VideoToYoutube.java",
+		"/home/nlare/_code/cpp-os-fkn/lab3/q1/q1-1.c",
+		"/home/nlare/_code/cpp-os-fkn/lab3/q1/q1-2.c",
+		"/home/nlare/_code/cpp-os-fkn/lab1/q2/q2.c",
+		"/home/nlare/_code/YouTubeUploader/com/uploader/VideoToVimeo.java",
+		"/home/nlare/_code/cpp-os-fkn/lab1/q1/q1.c",
+		"/home/nlare/_code/cpp-os-fkn/lab1/q2.c",
+		"/home/nlare/_code/cpp-os-fkn/lab1/q1.c",
+		"/home/nlare/_code/cpp-os-fkn/1/q2.c",
+		"/home/nlare/_code/cpp-os-fkn/1/q1.c",
+		"/home/nlare/_code/NIR-LW/document.tex",
+		"/home/nlare/_code/tex-fluid-flow/NIR_Andriyanov.tex",
+		"/home/nlare/_code/tex-fluid-flow/Lozhnikov.tex",
+		"/home/nlare/_code/Ultra-thin-film/text.tex",
+		"/home/nlare/_code/YouTubeUploader/com/uploader/Auth.java",
+		"/home/nlare/_code/YouTubeUploader/compile.sh",
+		"/home/nlare/_code/YouTubeUploader/run.sh",
+		"/home/nlare/_code/YouTubeUploader/com/uploader/AppGui.java",
+		"/home/nlare/_code/YouTubeUploader/com/uploader/CustomOutputStream.java",
+		"/home/nlare/_code/YouTubeUploader/com/uploader/LimitLinesDocumentListener.java",
+		"/home/nlare/_code/YouTubeUploader/com/uploader/MessageConsole.java",
+		"/home/nlare/_code/Landau-Wang-omp-redistributed/landau-wang-omp.cpp",
+		"/home/nlare/_code/YouTubeUploader/com/uploader/VideoFromURL.java",
+		"/home/nlare/_code/Landau-Wang/landau-wang.cpp",
+		"/home/nlare/_code/YouTubeUploader/com/uploader/ParseAndLoad.java",
+		"/home/nlare/_code/YouTubeUploader/YouTubeUploader.sublime-project",
+		"/home/nlare/_code/Landau-Wang-presentation-09.12.15/presentation.tex",
+		"/home/nlare/_code/Umnik-project/presentation.tex",
+		"/home/nlare/_code/Ultra-thin-film/presentation.tex",
+		"/home/nlare/_code/Landau-Wang-omp/landau-wang-omp.cpp",
+		"/home/nlare/_code/html-parser/com/HTMLParser/HTMLParser.java",
+		"/home/nlare/_code/html-parser/com/HTMLParser/VideoFromURL.java",
+		"/home/nlare/_code/html-parser/com/HTMLParser/VideoToYoutube.java",
+		"/home/nlare/_code/html-parser/com/HTMLParser/AppGui.java",
+		"/home/nlare/_code/sql-commands.txt",
+		"/home/nlare/data/_code/html-parser/com/HTMLParser/VideoToYoutube.java",
+		"/home/nlare/data/_code/html-parser/com/HTMLParser/VideoFromURL.java",
+		"/home/nlare/.config/sublime-text-3/Packages/User/JavaC-jsoup.sublime-build",
+		"/home/nlare/data/_code/html-parser/com/HTMLParser/HTMLParser.java",
+		"/home/nlare/.config/sublime-text-3/Packages/User/SQLExec.sublime-settings",
+		"/home/nlare/_code/html-parser/com/google/api/services/samples/youtube/cmdline/Auth.java",
+		"/home/nlare/_code/html-parser/portfolio.html",
+		"/home/nlare/_code/Zombie-game/Stroke.java",
+		"/home/nlare/_code/Zombie-game/Main.java",
+		"/home/nlare/_code/Articles_work/SQL/call_procs.sql",
+		"/home/nlare/_code/Articles_work/SQL/db_oracle.sql",
+		"/home/nlare/_code/Articles_work/SQL/test_procs.sql",
+		"/home/nlare/_code/Articles_work/SQL/sqlplus.sql",
+		"/home/nlare/_code/Articles_work/SQL/db.sql",
+		"/home/nlare/data/_code/html-parser/run.sh",
+		"/home/nlare/_code/html-parser/com/HTMLParser/Auth.java",
+		"/home/nlare/_code/html-parser/jsoup-1.8.3-sources.jar",
+		"/home/nlare/_code/html-parser/out",
+		"/home/nlare/_code/pxe_res/src/Main.java",
+		"/home/nlare/_code/LINUX KERNEL BUILD MANUAL. Useful commands.",
+		"/home/nlare/_code/pxe_res/sql/Test.sql",
+		"/home/nlare/_code/pxe_res/sql/create_tables.sql",
+		"/home/nlare/_code/Den's/Web/www/feedback/index.php",
+		"/net/NAS/WD5000AAKX-0/data/_code/Den's/Web/www/index.html",
+		"/home/nlare/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/nlare/.config/sublime-text-3/Packages/SQLExec/SQLExec.sublime-settings",
+		"/home/nlare/_code/java-test/TestCall.java",
+		"/home/nlare/_code/izing.universal.with.u/izing-3d.h",
+		"/home/nlare/_code/izing.universal.with.u/izing-3d.cpp",
+		"/home/nlare/_code/izing.universal.with.u/main.cpp",
+		"/home/nlare/_code/java-test/Main.java",
+		"/home/nlare/_code/java-test/Test.java",
+		"/home/nlare/_code/Java/pxe_res/main.jsp",
+		"/home/nlare/_code/Java/pxe_res/reg.jsp",
+		"/home/nlare/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/nlare/_code/APP/document.tex",
+		"/home/nlare/_code/git-manual/man.txt",
+		"/home/nlare/_code/NOTES/notes.txt",
+		"/home/nlare/_code/izing.universal.with.u/README.md",
+		"/home/nlare/_code/Landau-Wang-initial/WangLandN(b).cpp",
+		"/home/nlare/_code/spin_glass_metropolis/sg_metropolis.cpp",
+		"/home/nlare/_code/English/document.tex",
+		"/home/nlare/data/_code/izing.universal/izing-3d.h",
+		"/home/nlare/data/_code/izing.universal/main.cpp",
+		"/home/nlare/data/_code/izing.universal/izing-3d.cpp",
+		"/home/nlare/data/_docs/Маренко/Статья/25-05-15_СТАТЬЯ_Маренко и др_Омск.tex",
+		"/home/nlare/mount/sdc1-usb-USB_2.0_Flash_Di/25-11-14_СТАТЬЯ_Маренко и др_Омск/25-11-14_СТАТЬЯ_Маренко и др_Омск.tex",
+		"/home/nlare/_code/presentation_ogis/document.tex",
+		"/home/nlare/_code/Landau-Wang-presentation/presentation.tex",
+		"/home/nlare/_code/Landau-Wang-presentation/text.tex"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			";\n",
+			"];\n",
+			"16",
+			";\n",
+			"\";",
+			"Credential",
+			"parsed_ref_link",
+			"aAttrLink",
+			"metaLinkToVideo",
+			"elName",
+			"imgAttrVideo",
+			"aAttrLink",
+			"mediaContent",
+			".\");                    ",
+			"equals",
+			"IS_PUBLIC",
+			"REF_PART_OF_LINK",
+			"ITALIC",
+			"Serif",
+			"\"sans\"",
+			"/* font of your liking */",
+			"g_normalized",
+			"min_in_ge",
+			"div_averaging",
+			"hist_average",
+			"g_average",
+			"convergence_trigger",
+			"pp_i",
+			"convergence_trigger",
+			"\n$",
+			"par",
+			"\\\\\n",
+			"da",
+			"d20",
+			"da",
+			"buttonStart",
+			"apiRequest",
+			"updateVideoMetadata",
+			"System.out.println(params);",
+			"updateVideoMetadata",
+			"HiveToYoutube",
+			"tags",
+			"500",
+			"beginUploadVideo",
+			"apiRequest",
+			"token",
+			"VIMEO_SERVER",
+			"addVideo",
+			"MULTIPART_FORM_DATA",
+			"JSONException",
+			"buttonStop",
+			"spanCount",
+			"HTMLParser",
+			"org",
+			"import",
+			"net",
+			"package",
+			"count",
+			"ln_f",
+			"g_average",
+			"L = L",
+			"L = N",
+			"h2",
+			"/item/flash-giant-fx/12313496",
+			"class=\"js-google-analytics__list-event-trigger\"",
+			"a href=\"/item/",
+			"f_in",
+			"item-thumbnail__image",
+			"hyperref",
+			"\\hyperref",
+			"trigger[thread_num].relax",
+			"WriteTim",
+			"pp_i",
+			"Home",
+			"id",
+			"create",
+			"users",
+			"table",
+			"drop",
+			"ln_f",
+			"endif",
+			"true",
+			".with_defect",
+			"checked_spin",
+			"data",
+			"spin",
+			"g_average",
+			"div",
+			"count",
+			"g_ave",
+			"|| ",
+			"count",
+			"setpre",
+			";\n",
+			"g_average",
+			"random_index",
+			"random_index_x",
+			"\n                    ",
+			"ln_f",
+			"heigh",
+			"hist",
+			"min_value",
+			"update",
+			"up",
+			"update",
+			"massive[pp_i].hist[i]",
+			"random_index_g",
+			";\n",
+			"E_min",
+			"time_e",
+			"energy_levels_count",
+			"PP_POREZI_L",
+			"pp_porezi",
+			"{ ",
+			" \"\\",
+			"prob",
+			" \n",
+			"rank",
+			"top_b",
+			"neighbour_spins",
+			"b_new",
+			"pp_i",
+			"lambda",
+			"flat_thres",
+			"filename",
+			"nearly_spins",
+			"float",
+			"N"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"BOLD",
+			"DejaVu Serif",
+			"new Font(\"Serif\",Font.ITALIC,12)",
+			"\"sans\"",
+			"sans",
+			"i_da",
+			"buttonYoutubeUpload",
+			"HiveToResource",
+			"buttonExit",
+			"1",
+			"",
+			" ",
+			"checked_spin[thread_num]",
+			"data_pp",
+			"spin_pp[thread_num]",
+			"min_g_value",
+			"mas[pp_i].hist[i]",
+			"PP_PARISI_L",
+			"pp_parisi",
+			"flat_threshold",
+			"filename_out",
+			"neighbour_spins",
+			"double",
+			"L",
+			"get_local_id",
+			"data",
+			"results",
+			"         <<",
+			"call",
+			"spin.vector",
+			"drop",
+			"insert",
+			"mysql",
+			",\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "landau-wang.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15144,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								555,
+								555
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <list>",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/nlare/_code/cpp-izing.universal.with.u/main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11670,
+								11670
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3971.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/nlare/_code/cpp-izing.universal.with.u/izing-3d.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1506,
+								1506
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "landau-wang.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1932,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1535,
+								1535
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SQLExec":
+	{
+		"height": 311.0
+	},
+	"output.SQLExec.errors":
+	{
+		"height": 86.0
+	},
+	"output.exec":
+	{
+		"height": 144.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/My-C++.sublime-build",
+	"project": "landau-wang.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/_code/pxe_res/sql/create_tables.sql"
+			],
+			[
+				"izi",
+				"~/_code/izing.universal/izing-3d.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

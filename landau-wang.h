@@ -22,40 +22,49 @@
 class LANDAU_WANG {
 
 public:
-    LANDAU_WANG(std::string, int, float, float, int, int, float, int, float, float);
+    LANDAU_WANG(std::string, int, double, double, int, int, double, int, double, double);
     ~LANDAU_WANG();
 
-    int LANDAU_WANG_2D_ISING();
-    int LANDAU_WANG_3D_HEIS();
-    int NEIGHBOUR_ISING(int,int);
+    int    LANDAU_WANG_2D_ISING();
+    int    LANDAU_WANG_3D_HEIS();
+    int    NEIGHBOUR_ISING(int,int);
+    double NEIGHBOUR_HEIS_3D(double***,int,int,int);
 
 private:
 
-    int **spin;             // Массив спинов
-    int L;                  // Размер решетки
+    // SHARE VARS
 
-    int *hist;              // Массив гистограммы энергий, т.е количества посещений данного энергетического состояния
-    double *g;              /* Массив плотности состояний
-                             * Изначально каждый элемент массива принимается равным единице
-                             */
-    int b, b_new, top_b;    // Текущий энергетический уровень и последующий, top_b - предельный энергетический уровень
+    std::string SM;          // Simulation model
+
+    int skip;                // Количество шагов с неизменной энергией
+    int mcs;
+    int min_steps;
+
+    int it_magnet_count;    // После какой итерации считаем намагниченность
+    int it_count;           // Подсчет количества итераций
+
     double f, f_min, ln_f;  /* "f" - начальный множитель для энергетических уровней, 
                              * "f_min" - минимальное значение множителя
                              * на каждый принятый шаг f_m = (f_m-1)^1/2
                              */
-    int skip;                // Количество шагов с неизменной энергией
-    int mcs;
-    int min_steps;
+
+    int b, b_new, top_b;    // Текущий энергетический уровень и последующий, top_b - предельный энергетический уровень
+
+    int L, N;               // Размер решетки
+
+    int *hist, n;           // Массив гистограммы энергий, т.е количества посещений данного энергетического состояния
+                            // n - суммарное количество посещений
+
+    double *g;              /* Массив плотности состояний
+                             * Изначально каждый элемент массива принимается равным единице
+                             */
+
     double prob;             // Вероятность изменения энергетического уровня
     double flat_threshold;   // Порог "плоскости" гистограммы
 
-    double time_b, time_e;
-
     double T, T_min, T_max;
 
-    int it_count;
-
-    std::ofstream test_g_f, graph_g_f, graph_sh_g;
+    double time_b, time_e;
 
     double EE, EE2, GE, Ut, Ft, St, Ct, lambdatemp, lambda;
 
@@ -63,6 +72,22 @@ private:
 
     char * filename_out_td;
     char * filename_out_ds;
+
+    std::stringstream buffer, ss;
+
+    // ISING 2D
+
+    int **spin;             // Массив спинов
+
+    std::ofstream test_g_f, graph_g_f, graph_sh_g;
+
+    // HEISENBERG 3D
+
+    int Lx, Ly, Lz; // Размеры решетки в направлении x,y,z
+
+    float arcsin_Theta, radius;
+
+    double ***spin_x_heis, ***spin_y_heis, ***spin_z_heis, ksi1, ksi2, ksi3, dec_pow;
 
 };
 

@@ -56,7 +56,7 @@ int main(int argc, char *argv[])  {
 
             increment_iterator = false;
             // Нужно для перемещения итератора на определенную позицию списка
-            advance(it,0);
+            advance(it,2);
 
         }
 
@@ -111,21 +111,21 @@ int main(int argc, char *argv[])  {
     
                 if(count_of_parameters == 3) {
     
-                    F = std::stoi(current_parameter);
+                    F = std::stof(current_parameter);
                     std::cout << count_of_parameters << " :: F = " << current_parameter << "\n";
     
                 }
     
                 if(count_of_parameters == 4) {
     
-                    F_MIN = std::stoi(current_parameter);
+                    F_MIN = std::stof(current_parameter);
                     std::cout << count_of_parameters << " :: F_MIN = " << current_parameter << "\n";
     
                 }
     
                 if(count_of_parameters == 5) {
     
-                    MIN_STEPS   = std::stoi(current_parameter);
+                    MIN_STEPS = std::stoi(current_parameter);
                     std::cout << count_of_parameters << " :: MIN_STEPS = " << current_parameter << "\n";                
     
                 }
@@ -139,7 +139,7 @@ int main(int argc, char *argv[])  {
 
                 if(count_of_parameters == 7) {
     
-                    F_THRESHOLD = std::stoi(current_parameter);
+                    F_THRESHOLD = std::stof(current_parameter);
                     std::cout << count_of_parameters << " :: F_THRESHOLD = " << current_parameter << "\n";                
     
                 }
@@ -154,14 +154,14 @@ int main(int argc, char *argv[])  {
 
                 if(count_of_parameters == 9) {
     
-                    T_MIN = std::stoi(current_parameter);
+                    T_MIN = std::stof(current_parameter);
                     std::cout << count_of_parameters << " :: T_MIN = " << current_parameter << "\n";                
     
                 }
 
                 if(count_of_parameters == 10) {
     
-                    T_MAX = std::stoi(current_parameter);
+                    T_MAX = std::stof(current_parameter);
                     std::cout << count_of_parameters << " :: T_MAX = " << current_parameter << "\n";                
     
                 }
@@ -171,7 +171,7 @@ int main(int argc, char *argv[])  {
             cout << "\ncount_of_parameters = " << count_of_parameters << "\n\n";
             // cout << "-------------------------------------- \n";
             
-            if(count_of_parameters < 7)    {
+            if(count_of_parameters < 10)    {
 
                 cout << "One of the file have errors: \"" << filename << "\". Try to set correct count of parameters (10!). ABORT.\n\n";
                 cout << "EXAMPLE:\n";
@@ -180,16 +180,16 @@ int main(int argc, char *argv[])  {
                 cout << "-------------- \n";
                 cout << "DESCRIPTION:\n";
                 cout << "-------------- \n";
-                cout << "1 :: SMM                 (Simulation Method + Model e.g. LW3D_HEIS - [Landau-Wang + 3D Heisenberg model)\n";
-                cout << "2 :: L                   (Size of the lattice)\n";
-                cout << "3 :: F                   (Begin factor)\n";
-                cout << "4 :: F_MIN               (End factor)\n";
-                cout << "5 :: MIN_STEPS           (Minimal count of steps after which we check flatness\n";
-                cout << "6 :: IT_STEPS            (Every IT_STEPS count of steps we check flatness\n";
-                cout << "7 :: F_THRESHOLD         (Flat criteria)\n";
-                cout << "8 :: MAGNET_IT_AFTER     (Count of steps after which we can estimate magnetisation)\n";
-                cout << "9 :: T_MIN               (Begin of interval where steps for TEMP equal 0.1)\n";
-                cout << "10 :: T_MAX              (End of interval where steps for TEMP equal 0.1)\n";
+                cout << "1  :: SMM                 (Simulation Method + Model e.g. LW3D_HEIS - [Landau-Wang + 3D Heisenberg model)\n";
+                cout << "2  :: L                   (Size of the lattice)\n";
+                cout << "3  :: F                   (Begin factor)\n";
+                cout << "4  :: F_MIN               (End factor)\n";
+                cout << "5  :: MIN_STEPS           (Minimal count of steps after which we check flatness\n";
+                cout << "6  :: IT_STEPS            (Every IT_STEPS count of steps we check flatness\n";
+                cout << "7  :: F_THRESHOLD         (Flat criteria)\n";
+                cout << "8  :: MAGNET_IT_AFTER     (Count of steps after which we can estimate magnetisation)\n";
+                cout << "9  :: T_MIN               (Begin of interval where steps for TEMP equal 0.1)\n";
+                cout << "10 :: T_MAX               (End of interval where steps for TEMP equal 0.1)\n";
                 std::cout << "-------------- \n";
                 exit(1);
 
@@ -242,11 +242,21 @@ int main(int argc, char *argv[])  {
 
             // Izing3D Model("Izing3D", L, MCS, STAT, PP);
 
-            std::cout << SMM << ",\t" << L << ",\t" << F << ",\t" << F_MIN << ",\t" << MIN_STEPS << ",\t" << IT_STEPS << ",\t" << F_THRESHOLD << ",\t" << MAGNET_IT_AFTER << ",\t" <<  T_MIN << ",\t" <<  T_MAX << std::endl;
+            // std::cout << SMM << ",\t" << L << ",\t" << F << ",\t" << F_MIN << ",\t" << MIN_STEPS << ",\t" << IT_STEPS << ",\t" << F_THRESHOLD << ",\t" << MAGNET_IT_AFTER << ",\t" <<  T_MIN << ",\t" <<  T_MAX << std::endl;
 
             LANDAU_WANG LW(SMM, L, F, F_MIN, MIN_STEPS, IT_STEPS, F_THRESHOLD, MAGNET_IT_AFTER, T_MIN, T_MAX);
 
-            LW.LANDAU_WANG_2D_ISING();
+            if(SMM == "LW2D_ISING")  {
+
+                LW.LANDAU_WANG_2D_ISING();
+
+            }
+
+            if(SMM == "LW3D_HEIS")  {
+
+                LW.LANDAU_WANG_3D_HEIS();
+
+            }
 
             // Model.setMethod(SMM);
 
